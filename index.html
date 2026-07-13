@@ -8,12 +8,26 @@
 <h2>Login Mahasiswa - Branch DEVELOP BARU</h2>
 
 <label>Username</label><br>
-<input type="text"><br><br>
+<input type="text" id="username"><br><br>
 
 <label>Password</label><br>
-<input type="password"><br><br>
+<input type="password" id="password"><br><br>
 
-<button>Login</button>
+<button onclick="login()">Login</button>
+
+<script>
+function login() {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    if (username === "jisika" && password === "24110042") {
+        alert("Login Berhasil!");
+        window.location.href = "dashboard.html";
+    } else {
+        alert("Username atau Password salah!");
+    }
+}
+</script>
 
 </body>
 </html>
