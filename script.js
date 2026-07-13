@@ -94,7 +94,6 @@ document.getElementById("btnHapus").addEventListener("click", function () {
 });
 
 // Tombol Cari
-// Tombol Cari
 document.getElementById("btnCari").addEventListener("click", function () {
 
     let cari = document.getElementById("cari").value.toLowerCase();
@@ -111,6 +110,17 @@ document.getElementById("btnCari").addEventListener("click", function () {
         }
     }
 });
+
+
+// Tambahkan ini
+document.getElementById("btnReset").addEventListener("click", function () {
+
+    document.getElementById("cari").value = "";
+
+    tampilkanData();
+
+});
+
 
 // Tampilkan data saat halaman dibuka
 tampilkanData();
