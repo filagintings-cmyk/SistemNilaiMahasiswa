@@ -94,6 +94,7 @@ document.getElementById("btnHapus").addEventListener("click", function () {
 });
 
 // Tombol Cari
+// Tombol Cari
 document.getElementById("btnCari").addEventListener("click", function () {
 
     let cari = document.getElementById("cari").value.toLowerCase();
